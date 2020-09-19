@@ -17,3 +17,7 @@ You need to have an apple music account
 |<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/SamuelTsokwa/WaveMP/blob/master/images/homenotplaying.PNG">  Home View |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/SamuelTsokwa/WaveMP/blob/master/images/homeplayer.PNG">  Mini Player View|  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/SamuelTsokwa/WaveMP/blob/master/images/nowplaying.PNG">  Now Playing View |
 |<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/SamuelTsokwa/WaveMP/blob/master/images/lyrics.PNG"> Lyrics view|  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/SamuelTsokwa/WaveMP/blob/master/images/upnextqueue.PNG">  Up Next Queue View |<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/SamuelTsokwa/WaveMP/blob/master/images/albums.PNG">  Library Search: Album View |
 |<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/SamuelTsokwa/WaveMP/blob/master/images/playlist.PNG"> Library Search: Playlist View |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/SamuelTsokwa/WaveMP/blob/master/images/songs.PNG">  Library Search: Song View|
+
+## Feature List:
+* **Lyrics Retrieval** : Enjoy your songs alongside their lyrics. Powered by web crawlers and Firestore
+
