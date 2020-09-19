@@ -1,9 +1,9 @@
 # WaveMP
 
 Alternate apple music player !
-You need to have an apple music account
 
 ## Instructions:
+*You need to have an apple music account
 * Clone this repository
 * Open a terminal window in your new downloaded directory
 * Type **pod install**
