@@ -1,6 +1,0 @@
-framework module Pods_WaveMP {
-  umbrella header "Pods-WaveMP-umbrella.h"
-
-  export *
-  module * { export * }
-}

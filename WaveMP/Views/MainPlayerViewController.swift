@@ -210,7 +210,7 @@ class MainPlayerViewController: UIViewController, UIGestureRecognizerDelegate, U
 
         upnexttableviewwidthconstraint.constant = view.frame.width - 40
 
-        
+        contentView.bringSubviewToFront(upperview)
         
         
     }

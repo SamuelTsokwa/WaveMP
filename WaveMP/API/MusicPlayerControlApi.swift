@@ -17,7 +17,6 @@ class MusicPlayerControl
     var timer = Timer()
     var miniplayer : MiniPlayer?
     var mainplayercontrol : MainPlayerControls?
-    var playlistview : PlaylistViewController?
     var mainplayer : MainPlayerViewController?
     var list = [SongListCell]()
     var lock = false
@@ -330,16 +329,16 @@ class MusicPlayerControl
     @objc func updateNowPlaying()
     {
         //arrayofplaylistsongs()
-        let nowplayingitem = musicplayer.nowPlayingItem
-        DispatchQueue.main.async {
-            for item in self.playlistview?.playlisttable.visibleCells as! [SongListCell]
-        {
-            if item.songname.text == nowplayingitem?.value(forProperty: MPMediaItemPropertyTitle) as? String
-            {
-                item.nowplayinganimation.isHidden = false
-            }
-        }
-        }
+//        let nowplayingitem = musicplayer.nowPlayingItem
+//        DispatchQueue.main.async {
+//            for item in self.playlistview?.playlisttable.visibleCells as! [SongListCell]
+//        {
+//            if item.songname.text == nowplayingitem?.value(forProperty: MPMediaItemPropertyTitle) as? String
+//            {
+//                item.nowplayinganimation.isHidden = false
+//            }
+//        }
+//        }
 //        let has =  list.contains(where: { (cell) -> Bool in
 //            return cell.songname.text == nowplayingitem?.value(forProperty: MPMediaItemPropertyTitle) as? String
 //        })
@@ -353,16 +352,16 @@ class MusicPlayerControl
 //        p[0].nowplayinganimation.isHidden = false
         
     }
-    func arrayofplaylistsongs()
-    {
-        DispatchQueue.main.async {
-            for item in self.playlistview?.playlisttable.visibleCells as! [SongListCell]
-            {
-                self.list.append(item)
-            }
-        }
-        
-    }
+//    func arrayofplaylistsongs()
+//    {
+//        DispatchQueue.main.async {
+//            for item in self.playlistview?.playlisttable.visibleCells as! [SongListCell]
+//            {
+//                self.list.append(item)
+//            }
+//        }
+//        
+//    }
     func printQueue()
     {
         self.musicplayer.perform(queueTransaction: { (queue) in

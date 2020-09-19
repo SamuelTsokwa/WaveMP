@@ -114,20 +114,7 @@ class LibVCViewController: UIViewController, UIScrollViewDelegate, UISearchBarDe
     }
 
     
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let backItem = UIBarButtonItem()
-
-        navigationItem.backBarButtonItem = backItem
-        if segue.identifier == "searchtoplaylist"
-        {
-            if let destinationVC = segue.destination as? PlaylistViewController
-            {
-                print(destinationVC)
-                destinationVC.playlist = sender as? MPMediaItemCollection
-            }
-        }
-    }
+  
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?)
     {

@@ -109,20 +109,7 @@ class WaveViewController: UIViewController {
         navigationController!.pushViewController(pl, animated: true)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //wavetoplaylist
-        let backItem = UIBarButtonItem()
-
-        navigationItem.backBarButtonItem = backItem
-        if segue.identifier == "wavetoplaylist"
-        {
-            if let destinationVC = segue.destination as? PlaylistViewController
-            {
-                
-                destinationVC.playlist = sender as? MPMediaItemCollection
-            }
-        }
-    }
+    
 
 }
 extension WaveViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout

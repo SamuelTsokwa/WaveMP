@@ -225,11 +225,12 @@ extension PlaylistResultViewController: UITableViewDataSource, UITableViewDelega
         if PlaylistResultViewController.sharedInstance.playlistresultarr.count == 0
         {
             item = playlistresultarr[indexPath.row]
-            
+            curritem = item
         }
         else
         {
             item = PlaylistResultViewController.sharedInstance.playlistresultarr[indexPath.row]
+            curritem = item 
         }
         let upnextaction = musicplayerapi.addupnextmenuaction(item: nil, album: item.items)
         return UIContextMenuConfiguration(identifier: nil, previewProvider:
@@ -238,26 +239,42 @@ extension PlaylistResultViewController: UITableViewDataSource, UITableViewDelega
             var img = UIImage()
             let key = item.value(forProperty: MPMediaPlaylistPropertyPersistentID) as! NSNumber
             let savedimage = GlobalReferences().retrieveImage(forKey: key.stringValue + "min" )
-            if  savedimage != nil
-            {
-                
-                img = savedimage!
-            }
-//            if let image = item.representativeItem?.artwork
+//            if  savedimage != nil
 //            {
-//                img = image.image(at: self.view.frame.size)!
+//
+//                img = savedimage!
 //            }
-            else
-            {
+////            if let image = item.representativeItem?.artwork
+////            {
+////                img = image.image(at: self.view.frame.size)!
+////            }
+//            else
+//            {
+//                img = UIImage(named: "defaultmusicimage")!
+//            }
+             if let image = item.items[0].value(forProperty: MPMediaItemPropertyArtwork) as? MPMediaItemArtwork
+             {
+                 img = image.image(at: CGSize(width: 300, height: 600))!
+             }
+             else
+             {
                 img = UIImage(named: "defaultmusicimage")!
-            }
-                                     
+             }
             return PreviewViewController(image: img)
         })
         { suggestedActions in
             return UIMenu(title: "", children: [upnextaction])
         }
     }
+    func tableView(_ tableView: UITableView, willPerformPreviewActionForMenuWith configuration: UIContextMenuConfiguration, animator: UIContextMenuInteractionCommitAnimating)
+     {
+    
+         pl.playlist = curritem!
+         let backItem = UIBarButtonItem()
+         backItem.tintColor = UIColor.logocolor!
+         navigationItem.backBarButtonItem = backItem
+         navigationController!.pushViewController(pl, animated: true)
+     }
     
     
 }

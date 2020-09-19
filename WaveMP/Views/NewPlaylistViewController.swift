@@ -211,37 +211,45 @@ class NewPlaylistViewController: UIViewController {
                     mediaDescription.text = playlist?.value(forProperty: MPMediaPlaylistPropertyDescriptionText) as? String
                     mediaDescription.frame.size.height = mediaDescription.contentSize.height
                 }
-                
-                let newsize = CGSize(width: mediaImage.frame.size.width / 2, height: mediaImage.frame.size.height / 2)
-                let imageaaray = playlist!.artworkImageArray(size:newsize)
-                if playlist!.items.count == 0
+                if let image = playlist?.items[0].value(forProperty: MPMediaItemPropertyArtwork) as? MPMediaItemArtwork
                 {
-                    
+                    mediaImage.image = image.image(at: mediaImage.frame.size)
+                }
+                else
+                {
                     mediaImage.image = UIImage(named: "defaultmusicimage")
                 }
                 
-                if imageaaray.count >= 4
-                {
-                    let savedimage = GlobalReferences().retrieveImage(forKey: playlist?.value(forProperty: MPMediaPlaylistPropertyName) as! String)
-                    if  savedimage != nil
-                    {
-                        print("this image is saved")
-                        mediaImage.image = savedimage
-                    }
-                    else
-                    {
-                        print("image aint saved")
-                        
-                        let newImage = playlist?.collageImage(rect: mediaImage.frame, images: imageaaray)
-                        mediaImage.image = newImage
-                        GlobalReferences().store(image: newImage!, forKey: playlist!.value(forProperty: MPMediaPlaylistPropertyName) as! String)
-                    }
-                }
-                else if imageaaray.count < 4 && imageaaray.count > 0
-                {
-                    mediaImage.contentMode = .scaleAspectFill
-                    mediaImage.image = playlist!.items[0].artwork?.image(at: mediaImage.frame.size)
-                }
+//                let newsize = CGSize(width: mediaImage.frame.size.width / 2, height: mediaImage.frame.size.height / 2)
+//                let imageaaray = playlist!.artworkImageArray(size:newsize)
+//                if playlist!.items.count == 0
+//                {
+//
+//                    mediaImage.image = UIImage(named: "defaultmusicimage")
+//                }
+//
+//                if imageaaray.count >= 4
+//                {
+//                    let savedimage = GlobalReferences().retrieveImage(forKey: playlist?.value(forProperty: MPMediaPlaylistPropertyName) as! String)
+//                    if  savedimage != nil
+//                    {
+//                        print("this image is saved")
+//                        mediaImage.image = savedimage
+//                    }
+//                    else
+//                    {
+//                        print("image aint saved")
+//
+//                        let newImage = playlist?.collageImage(rect: mediaImage.frame, images: imageaaray)
+//                        mediaImage.image = newImage
+//                        GlobalReferences().store(image: newImage!, forKey: playlist!.value(forProperty: MPMediaPlaylistPropertyName) as! String)
+//                    }
+//                }
+//                else if imageaaray.count < 4 && imageaaray.count > 0
+//                {
+//                    mediaImage.contentMode = .scaleAspectFill
+//                    mediaImage.image = playlist!.items[0].artwork?.image(at: mediaImage.frame.size)
+//                }
             }
             else
             {
@@ -363,17 +371,7 @@ class NewPlaylistViewController: UIViewController {
             descriptionBoxHeight.constant = mediaDescription.frame.height + 20
             mainContentViewHeight.constant = tableViewHeightConstraint.constant + descriptionBoxHeight.constant + 40
             contentViewHeight.constant = mainContentViewHeight.constant + mediaImage.frame.height + 150
-//            mediaDescription.frame.size.height = mediaDescription.contentSize.height
-            
-//            if playlist != nil
-//            {
-////                descriptionBoxHeight.constant = playlistDescription.frame.height + 20
-//            }
-//            else if album != nil
-//            {
-//                descriptionBoxHeight.constant = mediaDescription.frame.height + 20
-////                print(descriptionBoxHeight,mediaDescription.frame.height)
-//            }
+
             UIView.animate(withDuration: 0.5)
             {
                self.updateViewConstraints()
@@ -382,7 +380,6 @@ class NewPlaylistViewController: UIViewController {
         else
         {
 
-//            searchResultLabel.isHidden = true
         }
             
 

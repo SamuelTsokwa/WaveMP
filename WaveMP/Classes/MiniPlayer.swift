@@ -9,7 +9,7 @@
 import UIKit
 import EFAutoScrollLabel
 import MarqueeLabel
-import LNPopupController
+//import LNPopupController
 
 class MiniPlayer: UIView {
     static let sharedInstance = MiniPlayer()

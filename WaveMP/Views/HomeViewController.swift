@@ -10,10 +10,9 @@ import UIKit
 import MediaPlayer
 import LNICoverFlowLayout
 import UPCarouselFlowLayout
-import DrawerView
 import LNPopupController
 import UIImageColors
-import Pulley
+
 
 
 class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
@@ -25,7 +24,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet var contentView: UIView!
     private var popupContentVC: MainPlayerViewController!
     private var mainplayer: MainPlayerViewController!
-    var drawerView : DrawerView?
     var collview: UICollectionView?
     var observer : NSObjectProtocol?
     var animator: UIViewPropertyAnimator?
@@ -312,7 +310,7 @@ extension HomeViewController
         }
         if collectionView == allSongsCV
         {
-            count = 18
+            count = recentlyPlayed.items.count
         }
         return count
         //
@@ -425,7 +423,4 @@ extension HomeViewController
 //        return UIEdgeInsets.zero
 //    }
 
-}
-extension HomeViewController:DrawerViewDelegate
-{
 }

@@ -17,7 +17,7 @@ class SongResultViewController: UIViewController,UITableViewDelegate, UITableVie
     var curritem : MPMediaItem? = nil
 
     var vc : MainPlayerViewController!
-
+    lazy var pl = storyboard!.instantiateViewController(withIdentifier: "newPlaylist") as! NewPlaylistViewController
     var navController = UINavigationController()
     var musicplayer = MPMusicPlayerController.applicationQueuePlayer
     let mediaqueries = MediaQuery.init()
@@ -204,7 +204,6 @@ extension SongResultViewController
                 
         var albumarray = [MPMediaItem]()
         let albumquery = MPMediaQuery.albums().collections!
-        print()
         for album in albumquery
         {
             if album.representativeItem?.albumTitle == item.albumTitle && album.representativeItem?.albumArtist == item.artist
@@ -214,9 +213,14 @@ extension SongResultViewController
             }
         }
         
-        let av : AlbumViewController = storyboard?.instantiateViewController(identifier: "album") as! AlbumViewController
-        av.album = albumarray
-        navController.pushViewController(av, animated: true)
+       
+        
+             pl.album = albumarray
+             let backItem = UIBarButtonItem()
+             backItem.tintColor = UIColor.logocolor!
+             navigationItem.backBarButtonItem = backItem
+             navigationController!.pushViewController(pl, animated: true)
+         
     }
 
 }

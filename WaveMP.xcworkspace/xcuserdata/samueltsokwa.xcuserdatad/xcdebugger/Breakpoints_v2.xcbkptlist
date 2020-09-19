@@ -14,8 +14,8 @@
             filePath = "WaveMP/API/MusicPlayerControlApi.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "310"
-            endingLineNumber = "310"
+            startingLineNumber = "309"
+            endingLineNumber = "309"
             landmarkName = "setQueueWithQuery(query:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,13 +30,13 @@
             filePath = "WaveMP/Views/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "HomeViewController"
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "2D125510-53A2-4019-8044-18F990DCA007 - 38ff165ed6df44a6"
+                  uuid = "2D125510-53A2-4019-8044-18F990DCA007 - cb4f7366a333e504"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -51,7 +51,7 @@
                   offsetFromSymbolStart = "856">
                </Location>
                <Location
-                  uuid = "2D125510-53A2-4019-8044-18F990DCA007 - 6a2bbdee743cf319"
+                  uuid = "2D125510-53A2-4019-8044-18F990DCA007 - 999bd8d601d052bb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -142,8 +142,8 @@
             filePath = "WaveMP/Views/WaveViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -292,7 +292,7 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "1BA84325-719C-4943-B459-77929C771393 - b1f6831b48475076"
+                  uuid = "1BA84325-719C-4943-B459-77929C771393 - 881e14dc6fe41b40"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -307,7 +307,7 @@
                   offsetFromSymbolStart = "140">
                </Location>
                <Location
-                  uuid = "1BA84325-719C-4943-B459-77929C771393 - e55bb0333965047a"
+                  uuid = "1BA84325-719C-4943-B459-77929C771393 - dcb327f41ec64f4c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -322,7 +322,7 @@
                   offsetFromSymbolStart = "196">
                </Location>
                <Location
-                  uuid = "1BA84325-719C-4943-B459-77929C771393 - 6f26319c8b95d369"
+                  uuid = "1BA84325-719C-4943-B459-77929C771393 - 56cea65bac369b29"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -337,7 +337,7 @@
                   offsetFromSymbolStart = "20">
                </Location>
                <Location
-                  uuid = "1BA84325-719C-4943-B459-77929C771393 - 7aeec84fcb39cce4"
+                  uuid = "1BA84325-719C-4943-B459-77929C771393 - 43065f88ec9a87d2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -352,7 +352,7 @@
                   offsetFromSymbolStart = "16">
                </Location>
                <Location
-                  uuid = "1BA84325-719C-4943-B459-77929C771393 - 57a66537be17cc8c"
+                  uuid = "1BA84325-719C-4943-B459-77929C771393 - 6e4ef2f099b487ba"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -367,7 +367,7 @@
                   offsetFromSymbolStart = "808">
                </Location>
                <Location
-                  uuid = "1BA84325-719C-4943-B459-77929C771393 - 2913ab250ce2831b"
+                  uuid = "1BA84325-719C-4943-B459-77929C771393 - 10fb3ce22b41c82d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -490,8 +490,8 @@
             filePath = "WaveMP/API/MusicPlayerControlApi.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "playnext()"
             landmarkType = "7">
          </BreakpointContent>
@@ -506,8 +506,8 @@
             filePath = "WaveMP/API/MusicPlayerControlApi.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
             landmarkName = "monitorplayerqueuechange()"
             landmarkType = "7">
          </BreakpointContent>
@@ -522,8 +522,8 @@
             filePath = "WaveMP/API/MusicPlayerControlApi.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "257"
-            endingLineNumber = "257"
+            startingLineNumber = "256"
+            endingLineNumber = "256"
             landmarkName = "schedule()"
             landmarkType = "7">
          </BreakpointContent>
@@ -924,8 +924,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "203"
             endingLineNumber = "203"
-            landmarkName = "Lyrics"
-            landmarkType = "3">
+            landmarkName = "uploadTOFirebase(lyrics:key:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1018,8 +1018,8 @@
             filePath = "WaveMP/Views/NewPlaylistViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "642"
-            endingLineNumber = "642"
+            startingLineNumber = "639"
+            endingLineNumber = "639"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1034,8 +1034,8 @@
             filePath = "WaveMP/Views/NewPlaylistViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "346"
-            endingLineNumber = "346"
+            startingLineNumber = "354"
+            endingLineNumber = "354"
             landmarkName = "registerCell()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1069,6 +1069,38 @@
             startingLineNumber = "163"
             endingLineNumber = "163"
             landmarkName = "scrubLink(data:titlestring:artiststring:key:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BD5777A-A62F-4941-A1AC-65BD427CAB78"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WaveMP/Views/MainPlayerViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "setupUI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC3370EF-04AC-4B84-A009-3BD1C519F00F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WaveMP/Views/MainPlayerViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "setupUI()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
